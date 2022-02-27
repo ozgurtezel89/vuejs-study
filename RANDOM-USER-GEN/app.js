@@ -7,6 +7,12 @@ const app = Vue.createApp({
             gender: 'male',
             picture: 'https://randomuser.me/api/portraits/lego/1.jpg'
         }
+    },
+    methods:
+    {
+        getUser() {
+            console.log(this.firstname);
+        }
     }
 })
 
