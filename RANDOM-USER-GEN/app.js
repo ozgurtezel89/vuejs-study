@@ -10,8 +10,12 @@ const app = Vue.createApp({
     },
     methods:
     {
-        getUser() {
-            console.log(this.firstname);
+        changeUser() {
+            this.firstname = 'Tilly';
+            this.lastname = 'Tezel';
+            this.email = 'tillytezel89@gmail.com';
+            this.gender = 'female';
+            this.picture = 'https://randomuser.me/api/portraits/lego/9.jpg'
         }
     }
 })
