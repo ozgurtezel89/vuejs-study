@@ -1,5 +1,5 @@
 <template>
-    <button :style="{ background: color }" class="btn">{{text}}</button>
+    <button @click="onClick()" @mouseenter="onHover()" :style="{ background: color }" class="btn">{{text}}</button>
 </template>
 
 <script>
@@ -9,6 +9,15 @@
         props: {
             text: String,
             color: String,
+        },
+        methods: {
+            onClick() {
+                console.log("Add Task Clicked");
+            },
+            onHover()
+            {
+                console.log("I am hovered over!");
+            }
         }
     }
 </script>
