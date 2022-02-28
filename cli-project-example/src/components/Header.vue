@@ -1,6 +1,6 @@
 <template>
     <header>
-        <h1>Task Trucker</h1>
+        <h1>{{title}}</h1>
     </header>
 </template>
 
@@ -8,6 +8,13 @@
     export default {
         // eslint-disable-next-line
         name: 'Header',
+        props: {
+            title:
+            {
+                type: String,
+                default: 'Title is not provided!',
+            }
+        }
     }
 </script>
 
