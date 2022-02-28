@@ -9,11 +9,7 @@
         // eslint-disable-next-line
         name: 'Header',
         props: {
-            title:
-            {
-                type: String,
-                default: 'Title is not provided!',
-            }
+            title: String,
         }
     }
 </script>
