@@ -6,6 +6,11 @@ npm install -g @vue/cli
 vue create cli-project
 ```
 
+We can also create a project like this via GUI
+```
+vue ui
+```
+
 ## Project setup
 ```
 npm install
